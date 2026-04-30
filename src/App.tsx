@@ -3,6 +3,7 @@ import './App.css';
 import FirstComponents from './components/FirstComponents';
 import TemplateExpressions from "./components/TemplateExpressions";
 import MyComponent from "./components/MyComponent";
+import Events from "./components/Events";
 // comentario comun
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <FirstComponents />
         <MyComponent   />
         <TemplateExpressions />
+        <Events />
     </div>
   );
 }
