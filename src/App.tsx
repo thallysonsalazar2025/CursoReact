@@ -8,7 +8,12 @@ function App() {
       <header className="App-header">
         <h1>Avancei no React!!!</h1>
       </header>
+        {/** Inclui imagens do public*/}
+        <div>
+          <img src="/perfil.jpeg" alt="Perfil" />
+        </div>
     </div>
+
   );
 }
 
