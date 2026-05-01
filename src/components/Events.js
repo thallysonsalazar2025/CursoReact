@@ -3,10 +3,23 @@ const Events = () => {
         console.log(e);
     }
 
-    return(
+    return (
         <div>
             <div>
-                <button onClick= {handleMyEvent}>Click aqui</button>
+                <button onClick={handleMyEvent}>Click aqui</button>
+            </div>
+            {/** Outra forma de disparar um eventos funcoes nos eventos*/}
+            <div>
+                <button onClick={() => console.log('Evento disparado')}>Click aqui também</button>
+            </div>
+
+            <div>
+                <button onClick={() => {
+                    if (true) {
+                        console.log('Evento disparado');
+                    }
+                }}>Click aqui também
+                </button>
             </div>
             <h1>Eventos em React</h1>
         </div>
