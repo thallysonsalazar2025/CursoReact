@@ -1,6 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+//forma de importar imagens do assets usando o valor da variavel
+import QUALQUER from "./assets/imagemQualquer.png"
 
 function App() {
   return (
@@ -11,6 +12,11 @@ function App() {
         {/** Inclui imagens do public*/}
         <div>
           <img src="/perfil.jpeg" alt="Perfil" />
+        </div>
+
+        {/** Inclui imagens do assets*/}
+        <div>
+            <img src={QUALQUER} alt="imagem qualquer" />
         </div>
     </div>
 
