@@ -5,8 +5,10 @@ import QUALQUER from "./assets/imagemQualquer.png"
 import ManageData from "./components/ManageData";
 import ListRender from "./components/ListRender";
 import ConditionalRender from "./components/ConditionalRender";
+import ShowUserName from "./components/ShowUserName";
 
 function App() {
+  const name = "Matheus";
   return (
 
     <div className="App">
@@ -15,6 +17,7 @@ function App() {
           <ManageData />
           <ListRender />
           <ConditionalRender />
+          <ShowUserName name= {name} />
       </header>
         {/** Inclui imagens do public*/}
         <div>
