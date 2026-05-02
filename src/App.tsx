@@ -7,6 +7,7 @@ import ListRender from "./components/ListRender";
 import ConditionalRender from "./components/ConditionalRender";
 import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
+import Fragment from "./components/Fragment";
 
 function App() {
   const name = "Matheus";
@@ -23,6 +24,7 @@ function App() {
           <ManageData />
           <ListRender />
           <ConditionalRender />
+          <Fragment proFragment = "terceiro titulo"/>
         {/*Props*/}
           <ShowUserName name= {name} />
         {/*Destructuring*/}
@@ -41,6 +43,7 @@ function App() {
                   newCar={car.newCar}
                   year={car.year}
               />
+
           ))}
 
 

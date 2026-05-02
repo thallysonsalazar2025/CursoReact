@@ -6,7 +6,7 @@ const ListRender = () => {
         {id: 3, name: "pedro", age: 23}]);
 
     const [items] = useState(['Apple', 'Banana', 'Cherry']);
-    {/*função para deletar um item do array*/}
+    //   função para deletar um item do array
     const deleteRandomItem = () => {
         const randomNumber = Math.floor(Math.random() * users.length);
         //  atraves do prevUsers é possivel filtrar os usrs com id atual e realizar
