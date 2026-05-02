@@ -9,8 +9,8 @@ const ListRender = () => {
     {/*função para deletar um item do array*/}
     const deleteRandomItem = () => {
         const randomNumber = Math.floor(Math.random() * users.length);
-        {/* atraves do prevUsers é possivel filtrar os usrs com id
-         atual e realizar a exclusão dos id diferente do esperado */}
+        //  atraves do prevUsers é possivel filtrar os usrs com id atual e realizar
+        //  a exclusão dos id diferente do esperado
         setUsers((prevUsers) => {
             return prevUsers.filter((user, index) => index !== randomNumber);
         })
