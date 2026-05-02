@@ -8,6 +8,7 @@ import ConditionalRender from "./components/ConditionalRender";
 import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
 import Fragment from "./components/Fragment";
+import Container from "./components/Container";
 
 function App() {
   const name = "Matheus";
@@ -25,6 +26,10 @@ function App() {
           <ListRender />
           <ConditionalRender />
           <Fragment proFragment = "terceiro titulo"/>
+          {/*Childrren component possibilita inclusão de codigo html*/}
+          <Container myValue="teste">
+              <h2>Conteudo do container</h2>
+          </Container>
         {/*Props*/}
           <ShowUserName name= {name} />
         {/*Destructuring*/}
