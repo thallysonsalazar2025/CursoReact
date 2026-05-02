@@ -4,6 +4,7 @@ import './App.css';
 import QUALQUER from "./assets/imagemQualquer.png"
 import ManageData from "./components/ManageData";
 import ListRender from "./components/ListRender";
+import ConditionalRender from "./components/ConditionalRender";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <h1>Avancei no React!!!</h1>
           <ManageData />
           <ListRender />
+          <ConditionalRender />
       </header>
         {/** Inclui imagens do public*/}
         <div>
