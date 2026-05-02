@@ -21,7 +21,9 @@ function App() {
         {/*Props*/}
           <ShowUserName name= {name} />
         {/*Destructuring*/}
-        <CarDetails brand="Ford" Km={10000} year={2020} color="Azul"/>
+        <CarDetails brand="Ford" Km={11000} year={2016} color="Branco" newCar={ false}/>
+        <CarDetails brand="Fiat" Km={90000} year={2020} color="Azul" newCar={ false}/>
+        <CarDetails brand="WV" Km={0} year={2026} color="Azul" newCar={ true}/>
 
       </header>
         {/** Inclui imagens do public*/}
