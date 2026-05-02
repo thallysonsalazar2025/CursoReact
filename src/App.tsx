@@ -3,6 +3,7 @@ import './App.css';
 //forma de importar imagens do assets usando o valor da variavel
 import QUALQUER from "./assets/imagemQualquer.png"
 import ManageData from "./components/ManageData";
+import ListRender from "./components/ListRender";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <header className="App-header">
         <h1>Avancei no React!!!</h1>
           <ManageData />
+          <ListRender />
       </header>
         {/** Inclui imagens do public*/}
         <div>
