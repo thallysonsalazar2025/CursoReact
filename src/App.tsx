@@ -10,6 +10,11 @@ import CarDetails from "./components/CarDetails";
 
 function App() {
   const name = "Matheus";
+  const cars = [
+      {id: 1, brand: "Ford", color: "red", km: 10000, newCar: false , year: 2020},
+      {id: 2, brand: "Kia", color: "Branco", km: 80000, newCar: false, year: 2022 },
+      {id: 3, brand: "Renault", color: "blue", km: 235000, newCar: false, year: 2024 }
+  ];
   return (
 
     <div className="App">
@@ -22,8 +27,23 @@ function App() {
           <ShowUserName name= {name} />
         {/*Destructuring*/}
         <CarDetails brand="Ford" Km={11000} year={2016} color="Branco" newCar={ false}/>
+        {/*Reaproveitando o componente*/}
         <CarDetails brand="Fiat" Km={90000} year={2020} color="Azul" newCar={ false}/>
         <CarDetails brand="WV" Km={0} year={2026} color="Azul" newCar={ true}/>
+
+          {/*Loop de renderização de componente*/}
+          {cars.map(car => (
+              <CarDetails
+                  key={car.id}
+                  brand={car.brand}
+                  color={car.color}
+                  Km={car.km}
+                  newCar={car.newCar}
+                  year={car.year}
+              />
+          ))}
+
+
 
       </header>
         {/** Inclui imagens do public*/}
