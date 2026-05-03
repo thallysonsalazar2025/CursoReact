@@ -9,6 +9,7 @@ import ShowUserName from "./components/ShowUserName";
 import CarDetails from "./components/CarDetails";
 import Fragment from "./components/Fragment";
 import Container from "./components/Container";
+import ExecuteFunction from "./components/ExecuteFunction";
 
 function App() {
   const name = "Matheus";
@@ -17,6 +18,9 @@ function App() {
       {id: 2, brand: "Kia", color: "Branco", km: 80000, newCar: false, year: 2022 },
       {id: 3, brand: "Renault", color: "blue", km: 235000, newCar: false, year: 2024 }
   ];
+  function showUserName() {
+      console.log("Função executada no App.tsx componente pai!");
+  }
   return (
 
     <div className="App">
@@ -25,6 +29,7 @@ function App() {
           <ManageData />
           <ListRender />
           <ConditionalRender />
+          <ExecuteFunction myFunction={showUserName}/>
           <Fragment proFragment = "terceiro titulo"/>
           {/*Childrren component possibilita inclusão de codigo html*/}
           <Container myValue="teste">
