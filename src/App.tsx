@@ -12,6 +12,7 @@ import Container from "./components/Container";
 import ExecuteFunction from "./components/ExecuteFunction";
 import Message from "./components/Message";
 import ChangeMessageState from "./components/ChangeMessageState";
+import UserDetails from "./components/UserDetails";
 
 function App() {
   const name = "Matheus";
@@ -20,6 +21,10 @@ function App() {
       {id: 2, brand: "Kia", color: "Branco", km: 80000, newCar: false, year: 2022 },
       {id: 3, brand: "Renault", color: "blue", km: 235000, newCar: false, year: 2024 }
   ];
+    const users = [
+        {id: 1, name: "Matheus", age: 20, profession: "Programador"},
+        {id: 2, name: "João", age: 25, profession: "Estagiário"},
+        {id: 3, name: "Pedro", age: 15, profession: "Estudante"}];
 
   function showUserName() {
       console.log("Função executada no App.tsx componente pai!");
@@ -39,6 +44,11 @@ function App() {
           <ConditionalRender />
           <ExecuteFunction myFunction={showUserName}/>
           <Message msg={message}/>
+          {users.map(user => (
+              <UserDetails key={user.id}
+                           user={user} />
+          ))}
+
           {/* */}
           <ChangeMessageState handleMessage={handleMessage}/>
           <Fragment proFragment = "terceiro titulo"/>
@@ -53,6 +63,7 @@ function App() {
         {/*Reaproveitando o componente*/}
         <CarDetails brand="Fiat" Km={90000} year={2020} color="Azul" newCar={ false}/>
         <CarDetails brand="WV" Km={0} year={2026} color="Azul" newCar={ true}/>
+
 
           {/*Loop de renderização de componente*/}
           {cars.map(car => (
